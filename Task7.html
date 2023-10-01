@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Styles for the first menu */
+#menu1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+#menu1 li {
+  float: left;
+  border-right: 1px solid blue;
+}
+
+#menu1 li:last-child {
+  border-right: none;
+}
+
+#menu1 li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu1 li a:hover:not(.active) {
+  background-color: gray;
+}
+
+#menu1 .active {
+  background-color: rgb(44, 28, 28);
+  color: white;
+}
+
+/* Styles for the second menu */
+#menu2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+#menu2 li a {
+  display: block;
+  color: darkblue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#menu2 li {
+  text-align: center;
+}
+
+#menu2 li:last-child {
+  border-bottom: none;
+}
+
+#menu2 li a.active {
+  background-color: yellow;
+  color: white;
+}
+
+#menu2 li a:hover:not(.active) {
+  background-color: lightblue;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- First Menu -->
+<ul id="menu1">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Java">Java</a></li>
+  <li><a href="#HTML">HTML</a></li>
+  <li><a href="#CSS">CSS</a></li>
+</ul>
+
+<!-- Second Menu -->
+<ul id="menu2">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Java">Java</a></li>
+  <li><a href="#CSS">CSS</a></li>
+  <li><a href="#HTML">HTML</a></li>
+  <li><a href="#Bootstrap">Bootstrap</a></li>
+</ul>
+
+</body>
+</html>
